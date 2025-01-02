@@ -1,11 +1,7 @@
-//0183fc1c307502fcc46e2be6c5e6f556
-
-//https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-
 function showweatherDetails(event) {
     event.preventDefault();
     const city = document.getElementById('city').value;
-    const apiKey = '0183fc1c307502fcc46e2be6c5e6f556'; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = 'YOUR_API_KEY'; // Replace 'YOUR_API_KEY' with your actual API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
     fetch(apiUrl)
